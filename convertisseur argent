@@ -1,0 +1,40 @@
+TAUX_XOF_VERS_USD = 0.001666
+TAUX_USD_VERS_XOF = 600.0
+def get_montant():
+    montant = float(input('Entre la somme a convertir : '))
+    return montant
+
+def convertir_xof_vers_usd(montant):
+    xof_vers_usd = montant * TAUX_XOF_VERS_USD
+    return xof_vers_usd
+def convertir_usd_vers_xof(montant):
+    usd_vers_xof = montant * TAUX_USD_VERS_XOF
+    return usd_vers_xof
+montant = get_montant()
+xof_vers_usd = convertir_xof_vers_usd(montant)
+usd_vers_xof = convertir_usd_vers_xof(montant)
+def affichage_resultats(montant, usd_vers_xof, xof_vers_usd):
+    print(f'Montant a convertir : {montant}\n')
+    print('1.Usd Vers XOF\n')
+    print('2.Xof Vers USD\n')
+    print('3.Quittez\n')
+affichage_resultats(montant, usd_vers_xof, xof_vers_usd)
+while True:
+    try:
+        choice = int(input('Choisis un nombre'))
+        break
+    except ValueError:
+        print('Enter a Number')
+        if choice not in range(1, 4):
+            print("Ce numero de choix n'existe pas")
+while True:
+    if choice == 1:
+       usd_vers_xof = convertir_usd_vers_xof(montant) 
+       print(f'{usd_vers_xof}')
+       break
+    elif choice == 2:
+        xof_vers_usd = convertir_xof_vers_usd(montant)
+        print(f'{xof_vers_usd}')
+        break
+    elif choice == 3:
+        break
