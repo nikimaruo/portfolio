@@ -1,5 +1,5 @@
 # portfolio
-Jeune devellopeur python.
+Jeune devellopeur python. \n
 Mon Parcours en Python : Projets et Apprentissages
 Ce dépôt GitHub regroupe mes projets personnels développés en Python, marquant les différentes étapes de mon apprentissage et de ma progression en programmation. Chaque dossier contient une application ou un script distinct, reflétant l'acquisition de nouvelles compétences et la résolution de défis variés.
 
