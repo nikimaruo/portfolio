@@ -1,0 +1,62 @@
+import random
+def CHOIX_DIFFICULTE():
+    try:
+        difficulte = input("Choisis la difficulté easy/medium/hard : ").lower()
+    except ValueError:
+        print("C'est pas si compliquer juste choisis easy/medium/hard")
+        return difficulte
+
+difficulte = CHOIX_DIFFICULTE()
+max_value = 100
+if difficulte == 'easy':
+    max_value = 100
+elif difficulte == 'medium':
+    max_value = 300
+elif difficulte == 'hard':
+    max_value = 500
+
+
+def LE_CHOIX_DU_PC(max_value):
+    choix_pc = random.randint(1, max_value)
+    return choix_pc
+
+def GET_PROPOSITION():
+    try:
+        proposition = int(input("Devine le nombre : "))
+        return proposition
+    except ValueError:
+        print("Entre un nombre J'ai dis !")
+
+essaies = 0
+
+def JOUER_JEUX(essaies, difficulte):
+    print("___TU AS 10 ESSAIES___")
+    while essaies < 10:
+        print(f"Il te reste {10 - essaies} essaies")
+        choix_pc = LE_CHOIX_DU_PC(max_value)
+        proposition = GET_PROPOSITION()
+        essaies = essaies + 1
+        try:
+            if proposition < choix_pc:
+                print(f"(#{essaies}) C'est trop petit ! \n")
+            elif proposition  > choix_pc:
+                print(f"(#{essaies}) C'est trop grand! \n")
+            elif proposition == choix_pc:
+                print(f"(#{essaies}) Tu as gagner c'etait un {choix_pc} \n")
+                break
+        except TypeError:
+            print("Tu as du missclick !")
+        if essaies == 10 and proposition != choix_pc:
+                print(f"You used up all your tries")
+                print("Essaye une autre fois !")
+while True:
+    JOUER_JEUX(essaies, difficulte)
+    try:
+        reponse = input('Veut tu rejouer oui/non :').lower()
+    except ValueError:
+        print("J'ai dis oui ou non !")
+    if reponse == 'oui':
+        JOUER_JEUX(essaies, difficulte)
+        CHOIX_DIFFICULTE()
+    elif reponse == 'non':
+        break
