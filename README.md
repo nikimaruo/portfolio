@@ -1,5 +1,6 @@
 # portfolio
 (WARNING : YOU WILL SEE THAT SOME TEXT IN MY CODE ARE SOMETIME IN ENGLISH BUT OTHERS TIME IN FRENCH IT'S BECAUSE I'M FLUENT IN BOTH)
+
 Jeune devellopeur python.
 
 Mon Parcours en Python : Projets et Apprentissages
