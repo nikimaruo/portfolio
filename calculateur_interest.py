@@ -8,9 +8,9 @@ while True:
         if principal <= 0:
             print("Your Princiapl can't be equal or less than zero")
             continue
-        rate = float(input("Enter your interrest rates in percent : "))
+        rate = float(input("Enter your interest rates in percent : "))
         if principal <= 0:
-            print("Your Interrest rates can't be equal or less than zero")
+            print("Your Interest rates can't be equal or less than zero")
             continue
         time = int(input("Enter your time in years : "))
         if principal <= 0:
@@ -21,4 +21,4 @@ while True:
         print("Enter a number !")
 final_amount = principal * pow((1 + rate / 100 ), time)
 
-print(f"Your final amount after {time} years of a {rate}% interrest is : {final_amount}")
+print(f"Your final amount after {time} years of a {rate}% interest is : {final_amount}")
