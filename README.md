@@ -19,5 +19,4 @@ Projets inclus (liste non exhaustive, à adapter avec tes projets) :
 Jeu "Devine le Nombre" : Un jeu interactif en console qui m'a permis de travailler sur la génération de nombres aléatoires, les boucles de jeu, et la gestion des essais.
 Calculatrice Simple : Une calculatrice en ligne de commande gérant les opérations de base, l'entrée de nombres décimaux et la gestion des erreurs de division par zéro.
 [À venir ou en cours] Gestion de Tâches (To-Do List) : Un projet plus ambitieux visant à créer une application de gestion de tâches avec des fonctionnalités de base, et potentiellement la sauvegarde des données et des options avancées à l'avenir.
-[Ajoute ici d'autres projets que tu as faits ou que tu feras]
 Ce dépôt est un témoignage de mon engagement à apprendre et à m'améliorer continuellement en Python. N'hésitez pas à explorer le code et les différentes implémentations.
